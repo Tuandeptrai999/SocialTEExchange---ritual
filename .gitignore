@@ -1,0 +1,33 @@
+# Hardhat artifacts and cache
+artifacts/
+cache/
+typechain-types/
+
+# Dependencies
+node_modules/
+
+# Environment variables & Private secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+
+# Hardhat configuration output/logs
+hardhat.config.js.map
+hardhat.config.ts.map
+
+# IDE / Editor configurations
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db

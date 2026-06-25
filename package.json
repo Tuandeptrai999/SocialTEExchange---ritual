@@ -1,0 +1,30 @@
+{
+  "name": "deployed-agents-chinh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "compile": "hardhat compile",
+    "deploy": "hardhat run scripts/deploy.ts --network ritual",
+    "balance": "PRIVATE_KEY=$PRIVATE_KEY ACTION=balance  hardhat run scripts/interact.ts --network ritual",
+    "deposit": "PRIVATE_KEY=$PRIVATE_KEY ACTION=deposit  hardhat run scripts/interact.ts --network ritual",
+    "list-cert": "PRIVATE_KEY=$PRIVATE_KEY ACTION=list     hardhat run scripts/interact.ts --network ritual",
+    "view-certs": "PRIVATE_KEY=$PRIVATE_KEY ACTION=view    hardhat run scripts/interact.ts --network ritual",
+    "buy-data": "PRIVATE_KEY=$PRIVATE_KEY ACTION=buy      hardhat run scripts/interact.ts --network ritual"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^6.1.2",
+    "@types/node": "^26.0.1",
+    "hardhat": "^2.28.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  },
+  "dependencies": {
+    "eciesjs": "^0.5.0",
+    "viem": "^2.53.1"
+  }
+}
